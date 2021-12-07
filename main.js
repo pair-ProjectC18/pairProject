@@ -31,6 +31,24 @@ $body.css({
     "background - position - y":"inherit ",
     "background-repeat":"no-repeat"
 })
+$(".narve").css({
+    "list-style-type": "none",
+  "margin":"0",
+  "padding":"0",
+  "overflow":"hidden",
+  "background-color": "black",
+})
+$("li").css ({
+    "float": "left",
+  })
+  $('a').css({
+    "display": "block",
+    "color": "white",
+    "text-align": "center",
+    "padding": "35px 110px",
+    "text-decoration": "none",
+  })
+  
 var input1=$("<input type=text id=FirstName> <br>")
 input1.attr("placeholder" ," here your first name")
  input1.appendTo(".signUp")
