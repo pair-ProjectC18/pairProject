@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
     <title>GYM Store</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="./Wix Logo Maker - Google Chrome 07_12_2021 00_39_59.png">
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="./Wix Logo Maker - Google Chrome 07_12_2021 00_39_59.png">
+        <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,6 +18,7 @@
     <div class=" signIn">
 
     </div>
+
     <ul class='narve'>
         <li><a class="dietary" href="#home">Dietary Supplement</a></li>
         <li><a class='equipement' href="#equpement">Sport Equipement</a>
@@ -28,8 +27,8 @@
     </ul>
     <div class="raw">
         <div class="column">
-            <div class="card">
-                <img src="./serious-mass-banner.jpg" style="width:100%">
+            <div class="card1">
+                <img src="pictures/serious-mass-banner.jpg" style="width:100%">
                 <div class="container">
                     <h2>Serious Mass</h2>
                     <h1>180DT </h1>
@@ -37,10 +36,11 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="raw1">
         <div class="column">
-            <div class="card">
-                <img src="./whey-protein-banner-with-nutrition-jar-vector-28925542.jpg" style="width:100%">
+            <div class="card2">
+                <img src="pictures/whey-protein-banner-with-nutrition-jar-vector-28925542.jpg" style="width:100%">
                 <div class="container">
                     <h2>Whey Protein</h2>
                     <h1>200DT </h1>
@@ -48,10 +48,11 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="raw2">
         <div class="column">
-            <div class="card">
-                <img src="./bcaa-zero_1.jpg" style="width:100%">
+            <div class="card3">
+                <img src="pictures/bcaa-zero_1.jpg" style="width:100%">
                 <div class="container">
                     <h2>BCAA Zero</h2>
                     <h1>60DT </h1>
@@ -60,10 +61,10 @@
             </div>
         </div>
     </div>
-    <div class="raw1">
+    <div class="raw3">
         <div class="column1" id="a">
-            <div class="card1">
-                <img src="./images (2).jpg" style="width:100%">
+            <div class="card4">
+                <img src="pictures/images (2).jpg" style="width:100%">
                 <div class="container1">
                     <h2>30kg</h2>
                     <h1>250kg </h1>
@@ -71,10 +72,11 @@
                 </div>
             </div>
         </div>
-
+    </div>
+<div class="raw4">
         <div class="column1" id="coach">
-            <div class="card1">
-                <img src="./1-Sans titre-2.jpg" style="width:100%">
+            <div class="card5">
+                <img src="pictures\thecoach.jpg" style="width:100%">
                 <div class="container1">
                     <h2>Azer mhamdi </h2>
                     <h1>coach pro</h1>
@@ -82,10 +84,11 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="raw5"></div>
         <div class="column1" id="halt ">
-            <div class="card1 ">
-                <img src="./kit-halteres-reglables-halteres-musculation-ex.jpg " style="width:100% ">
+            <div class="card6 ">
+                <img src="pictures\kit-halteres-reglables-halteres-musculation-ex.jpg" style="width:100% ">
                 <div class="container1 ">
                     <h2> 20kg</h2>
                     <h1>200d </h1>
@@ -94,117 +97,11 @@
             </div>
         </div>
     </div>
-    <script>
-        var $body = $("body ")
-        $("#p ").append("<h1 id=title>GYM Shop</h1>");
-        $("#title ").css({
-            "background-color": "black",
-            "width": "400px",
-            "border": "10px solid red",
-            "width": "300 px ",
-            "text-align": "center",
-            "color": "red",
-        })
-        $(".signUp").css({
-            "width": "100%",
-            "text-align": "center",
-            "width": "100%", // "text-align": "center", // "position":"absolute", // "bottom":"230px;", }) $(".signIn").css({ "width": "100%", "text-align": "center", "width": "100%", // "text-align": "center", // "position": "absolute", // "bottom": "4000px;",
-        })
-        $body.css({
-            "background-image": "url('./70-707080_dwayne-johnson-gym-the-rock-bodybuilder.jpg')",
-            "background-size": " cover ",
-            "background - position - y": "inherit ",
-            "background-repeat": "no-repeat"
-        })
-        $(".narve").css({
-            "list-style-type": "none",
-            "margin": "0",
-            "padding": "0",
-            "overflow": "hidden",
-            "background-color": "black",
-        })
-        $("li").css({
-            "float": "left",
-        })
-        $('a').css({
-            "display": "block",
-            "color": "white",
-            "text-align": "center",
-            "padding": "35px 110px",
-            "text-decoration": "none",
-        }) 
-        var input1 = $("<input type=text id=FirstName> <br>")
-        input1.attr("placeholder", " here your first name")
-        input1.appendTo(".signUp")
-        var input2 = $("<input type=text id=LastName> <br> ")
-        input2.attr("placeholder", " your LastName")
-        input2.appendTo(".signUp")
-        var input3 = $("<input type=email><br>")
-        input3.attr("placeholder", " here your email")
-        input3.appendTo(".signUp")
-        var input4 = $("<input type=number id=number><br>")
-        input4.attr("placeholder", " here your phonenumber ")
-        input4.appendTo(".signUp ")
-        var input5 = $(" <input type = password id = passeword><br > ")
-        input5.attr("placeholder ", "here your password ")
-        input5.appendTo(".signUp ")
-        var input6 = $(" < input type = password id = confirm > < br > ")
-        input6.attr("placeholder ", " confirm your password here")
-        input6.appendTo(".signUp")
-        var button1 = $("<button>SIGN UP </button><br>")
-        button1.attr("id", "signup")
-        button1.appendTo(".signUp")
-        var input7 = $("<input type=email id=gmail><br>")
-        input7.attr("placeholder", " your mail")
-        input7.appendTo(".signIn")
-        var input8 = $("<input type=password id=FirstName><br>")
-        input8.attr("placeholder", " here your password")
-        input8.appendTo(".signIn")
-        var button2 = $("<button>LOG IN</button><br>")
-        button2.attr("id", "login")
-        button2.appendTo(".signIn")
-        $(".raw").hide()
-        $(".raw1").hide()
-        $(".narve").hide()
-        $(".signIn").hide()
-        $("#signup").click(function() {
-            if (input3.val().length > 0 && input1.val().length > 0 && input2.val().length > 0 && input2.val().length > 0 && input4.val().length > 0 && input5.val().length > 0 && input6.val().length > 0 && input5.val() === input6.val()) {
-                $(".signUp").hide()
-                $(".signIn").show()
-            } else {
-                alert('Please fill all your information')
-            }
-        });
-        $("#login").click(function() {
-            if (input7.val() === input3.val() && input5.val() === input8.val()) {
-                $(".signIn").hide()
-                $("#p").hide()
-                $(".narve").show()
-                $(".raw").show()
-                $(".raw1").hide()
-            } else {
-                alert('Please Check Your Password or email')
-            }
-        })
-        $(".equipement").click(function() {
-            $(".raw").hide()
-            $(".raw1").show()
-            $("#coach").hide()
-        })
-        $(".coachs").click(function() {
-            $(".raw").hide()
-            $(".raw1").hide()
-            $("#coach").show()
-        })
-        $(".dietary").click(function() {
-            $(".raw").show()
-            $("#halt").hide()
-            $("#a").hide()
-            $("#coach").hide()
-        })
-    </script>
-    /*
-    <!-- < script src=" main.js "></script> -->*/
+
+
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
